@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Montserrat, Arial, Helvetica, sans-serif;
+}
+#hero-section {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+h1 {
+  font-family: Montserrat, Arial;
+  font-weight: 700;
+}
+.heading-section {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
+.heading-section h1{
+  color: #575A85;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.heading-section p{
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.heading-section img {
+  position: relative;
+  left: 125px;
+  top: 60px;
+  width: 442px;
+  height: 422px;
+}
+.cta-section {
+  background-color: #575A85;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+}
+.cta-section h1{
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.cta-section button{
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 48px;
+  font-size: 24px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: padding 0.3s ease-in-out;
+}
+.cta-section button:hover{
+  border: 2px solid white;
+  padding: 10px 42px;
+}
+
+
+#content-page {
+  width: 100%;
+  
+}
+.header-section {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: black;
+  color: #B8BCCC;
+}
+.header-section h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.client-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+  padding-bottom: 40px;
+}
+.client-details p {
+  font-family: Inter, Impact;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.map-section {
+  background-color: #575A85;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 40px;
+  gap: 30px;
+  width: 100%;
+}
+.map-section h1{
+  font-size: 48px;
+  color: #B8BCCC;
+  margin-bottom: 20px;
+}
+.map-section iframe {
+  height: 680px;
+  border: none;
+  width: 100% !important;
+  display: block; 
+}
+.more-info-section {
+  background-color:black;
+  padding: 30px;
+  color: #B8BCCC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.more-info-section h1 {
+  font-size: 48px;
+}
+.more-info {
+  align-self: flex-start
+}
+.more-info p {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: Inter, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 20px;
+}
+.post-office-section {
+  background-color:black;
+  padding: 30px;
+  color: #B8BCCC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.post-office-section h1 {
+  font-size: 48px;
+}
+.search-input {
+  width: 100%;
+  border: 1px solid #B8BCCC;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  transition: border 0.3s ease;
+}
+.search-input:focus-within {
+  border: 2px solid #575A85;
+}
+.search-input i{
+  font-size: 28px;
+}
+#search {
+  background-color: transparent;
+  border: none;
+  padding: 12px 16px;
+  width: 100%;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: Montserrat;
+  color: #B8BCCC;
+}
+#search:focus {
+  outline: none;
+  border: none;
+}
+#post-offices-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+.post-card {
+  background-color: #575A85;
+  padding: 20px;
+  border-radius: 8px;
+  color: #B8BCCC;
+}
+.post-card p {
+  font-family: Montserrat, Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* Responsive Design */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  .heading-section {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .heading-section h1,
+  .heading-section p {
+    font-size: 28px;
+  }
+
+  .heading-section img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .cta-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .cta-section h1,
+  .cta-section button {
+    font-size: 20px;
+  }
+
+  .client-details {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .client-details p {
+    font-size: 20px;
+  }
+
+  .map-section iframe {
+    height: 400px;
+  }
+
+  .more-info p,
+  .post-card p {
+    font-size: 24px;
+  }
+
+  #post-offices-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+  .heading-section,
+  .cta-section,
+  .header-section,
+  .map-section,
+  .more-info-section,
+  .post-office-section {
+    padding: 16px;
+  }
+
+  .heading-section h1,
+  .cta-section h1 {
+    font-size: 22px;
+  }
+
+  .heading-section p,
+  .cta-section button {
+    font-size: 18px;
+  }
+  .client-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+  }
+  .map-section iframe {
+    height: 300px;
+  }
+
+  .more-info p,
+  .post-card p {
+    font-size: 18px;
+  }
+
+  #post-offices-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  #search {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+/* Large Screens (1200px and up) */
+@media (min-width: 1200px) {
+  .heading-section h1,
+  .cta-section h1 {
+    font-size: 48px;
+  }
+
+  .heading-section p,
+  .cta-section button,
+  .more-info p,
+  .post-card p {
+    font-size: 32px;
+  }
+
+  .map-section iframe {
+    height: 680px;
+  }
+}
