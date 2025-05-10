@@ -54,6 +54,7 @@ h1 {
   justify-content: center;
   width: 50%;
   height: 100vh;
+  padding: 30px;
 }
 .cta-section h1{
   color: white;
